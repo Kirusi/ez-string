@@ -1,0 +1,27 @@
+{
+  "name": "ez-string",
+  "version": "1.1.5",
+  "description": "A string template renderer for JavaScript without memory leaks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kirusi/ez-string.git"
+  },
+  "keywords": [
+    "string",
+    "template",
+    "render",
+    "interpolation",
+    "variable",
+    "substitution"
+  ],
+  "author": "Kirusi Msafiri",
+  "license": "0BSD",
+  "bugs": {
+    "url": "https://github.com/Kirusi/ez-string/issues"
+  },
+  "homepage": "https://github.com/Kirusi/ez-string#readme"
+}
