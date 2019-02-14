@@ -1,4 +1,7 @@
 # ez-string
+[![Travis build status badge](https://api.travis-ci.org/Kirusi/ez-string.svg?branch=master)](https://travis-ci.org/Kirusi/ez-string)
+[![ESDoc coverage badge](https://doc.esdoc.org/github.com/Kirusi/ez-string/badge.svg)](https://doc.esdoc.org/github.com/Kirusi/ez-string/)
+
 A string template renderer for JavaScript without memory leaks. It supports referencing variables by position, by name. One can access properties and array elements.
 
 ## Example

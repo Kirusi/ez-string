@@ -1,5 +1,6 @@
 'use strict';
 
+// Jison-generated parser
 const GeneratedParser = require('../../generated/generated-parser');
 
 /**
