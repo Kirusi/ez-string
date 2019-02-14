@@ -7,7 +7,7 @@ A string template renderer for JavaScript without memory leaks. It supports refe
 ## Example
 
 ```js
-const render = require('ez-string');
+const render = require('ez-string').render;
 let book;
 
 // Format using variable's position
@@ -66,7 +66,7 @@ $ npm i --save ez-string
 ```
 
 ```js
-const render = require('ez-string');
+const render = require('ez-string').render;
 let book;
 
 // Format using variable's position
@@ -83,7 +83,6 @@ In a browser:
 <script src="ez-string.js"></script>
 
 <script>
-    const render = require('ez-string');
     let book;
 
     // Format using variable's position

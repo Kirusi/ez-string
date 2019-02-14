@@ -87,6 +87,7 @@ module.exports = __webpack_require__(1);
 "use strict";
 
 
+/**  Jison-generated parser */
 const GeneratedParser = __webpack_require__(2);
 
 /**
@@ -98,7 +99,7 @@ const GeneratedParser = __webpack_require__(2);
  * @returns {string} - template string with interpolated variables
  *
  * @example
- * const render = require('ez-string');
+ * const render = require('ez-string').render;
  * let book;
  *
  * // Format using variable's position

@@ -34,8 +34,10 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="ez-string">ez-string</h1><p>A string template renderer for JavaScript without memory leaks. It supports referencing variables by position, by name. One can access properties and array elements.</p>
-<h2 id="example">Example</h2><pre><code class="lang-js"><code class="source-code prettyprint">const render = require(&apos;ez-string&apos;);
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="ez-string">ez-string</h1><p><a href="https://travis-ci.org/Kirusi/ez-string"><img src="https://api.travis-ci.org/Kirusi/ez-string.svg?branch=master" alt="Travis build status badge"></a>
+<a href="https://doc.esdoc.org/github.com/Kirusi/ez-string/"><img src="https://doc.esdoc.org/github.com/Kirusi/ez-string/badge.svg" alt="ESDoc coverage badge"></a></p>
+<p>A string template renderer for JavaScript without memory leaks. It supports referencing variables by position, by name. One can access properties and array elements.</p>
+<h2 id="example">Example</h2><pre><code class="lang-js"><code class="source-code prettyprint">const render = require(&apos;ez-string&apos;).render;
 let book;
 
 // Format using variable&apos;s position
@@ -88,7 +90,7 @@ example = render(&apos;{data[&quot;\\&quot;&quot;]}&apos;, {
 <h2 id="installation">Installation</h2><p>Using NodeJS:</p>
 <pre><code class="lang-shell"><code class="source-code prettyprint">$ npm i --save ez-string</code>
 </code></pre>
-<pre><code class="lang-js"><code class="source-code prettyprint">const render = require(&apos;ez-string&apos;);
+<pre><code class="lang-js"><code class="source-code prettyprint">const render = require(&apos;ez-string&apos;).render;
 let book;
 
 // Format using variable&apos;s position
@@ -103,7 +105,6 @@ book = render(&apos;One of the best books by {author} is &quot;{title}&quot;.&ap
 &lt;script src=&quot;ez-string.js&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
-    const render = require(&apos;ez-string&apos;);
     let book;
 
     // Format using variable&apos;s position

@@ -12,7 +12,7 @@ const GeneratedParser = require('../../generated/generated-parser');
  * @returns {string} - template string with interpolated variables
  *
  * @example
- * const render = require('ez-string');
+ * const render = require('ez-string').render;
  * let book;
  *
  * // Format using variable's position
