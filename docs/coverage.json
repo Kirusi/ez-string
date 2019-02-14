@@ -1,0 +1,31 @@
+{
+  "coverage": "36.36%",
+  "expectCount": 11,
+  "actualCount": 4,
+  "files": {
+    "src/private/generator.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        10,
+        14,
+        21,
+        25
+      ]
+    },
+    "src/private/raw-parser.js": {
+      "expectCount": 5,
+      "actualCount": 3,
+      "undocumentLines": [
+        5,
+        109
+      ]
+    },
+    "src/public/ez-string.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    }
+  }
+}

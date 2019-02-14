@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/public/ez-string.js | ez-string Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A string template renderer for JavaScript without memory leaks."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="ez-string Library"><meta property="twitter:description" content="A string template renderer for JavaScript without memory leaks."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/Kirusi/ez-string"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#private">private</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/private/raw-parser.js~RawParser.html">RawParser</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#public">public</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/public/ez-string.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&apos;use strict&apos;;
+
+const GeneratedParser = require(&apos;../../generated/generated-parser&apos;);
+
+/**
+ * Renders a template by substituting variable placeholders with provided data.
+ *
+ * @param {string} template - string with positional or named parameters enclosed in curly braces
+ * @param  {...any} args - either multiple values when using positional parameters,
+ *                         or a single objects with names of the fields corresponding to the names used in the template
+ * @returns {string} - template string with interpolated variables
+ *
+ * @example
+ * const render = require(&apos;ez-string&apos;);
+ * let book;
+ *
+ * // Format using variable&apos;s position
+ * book = render(&apos;One of my favorite books is &quot;{0}&quot; by {1}.&apos;, &apos;The Name of the Wind&apos;, &apos;Patrick Rothfuss&apos;);
+ * // book = &apos;One of my favorite books is &quot;The Name of the Wind&quot; by Patrick Rothfuss.&apos;
+ *
+ * // Format using variable&apos;s name
+ * // Variable names must use A-Za-z0-9$_
+ * book = render(&apos;One of my favorite books is &quot;{title}&quot; by {author}.&apos;,
+ *      { title: &apos;The Name of the Wind&apos;, author: &apos;Patrick Rothfuss&apos;});
+ * // book = &apos;One of my favorite books is &quot;The Name of the Wind&quot; by Patrick Rothfuss.&apos;
+ *
+ * // Curly braces are escaped by using double braces
+ * let example;
+ * example = render(&apos;{{title}}&apos;);
+ * // example = &apos;{title}&apos;
+ *
+ * // One can use array indices
+ * book = render(&apos;&quot;{arr[0]}&quot; was first published in {arr[1]}.&apos;,
+ *      { arr: [&apos;The Hobbit&apos;, 1937]});
+ * // book = &apos;&quot;The Hobbit&quot; was first published in 1937.&apos;
+ *
+ * // One can use object properties.
+ * // Properties with names consisting of A-Za-z0-9$_ can be accessed using property notation
+ * // Properties with other names can be accessed using index notation
+ * book = render(&apos;&quot;{book.title}&quot; was written by {book.author[&quot;first name&quot;]} {book.author[&quot;last name&quot;]}. It was published in {book.year}.&apos;, {
+ *          book: {
+ *              title: &apos;Marina&apos;,
+ *              year : 1999,
+ *              author: {
+ *                  &apos;first name&apos;: &apos;Carlos&apos;,
+ *                  &apos;last name&apos;: &apos;Zafon&apos;
+ *              }
+ *          }
+ *      });
+ *  // book = &apos;&quot;Marina&quot; was written by Carlos Zafon. It was published in 1999.&apos;
+ *
+ * // If a property name contains a quote character or backslash, they need to be escaped.
+ * // Quotes are prepended by a backslash
+ * // Backslashes need to be doubled
+ * example = render(&apos;{data[&quot;\\\\&quot;]}&apos;, {
+ *      data: {&apos;\\&apos;: &apos;backslash&apos;}
+ * });
+ * // example = &apos;backslash&apos;
+ * example = render(&apos;{data[&quot;\\&quot;&quot;]}&apos;, {
+ *      data: {&apos;&quot;&apos;: &apos;quote&apos;}
+ * });
+ * // example = &apos;quote&apos;
+ */
+function render(template, ...args) {
+    /* Parser object is not re-entrant.
+       Instantiation of generated parser is light and fast. Create a new instance for every call. */
+    const parser = new GeneratedParser.Parser();
+    parser.yy.ctx = args;
+    let result = parser.parse(template);
+    return result;
+}
+
+module.exports = {
+    render
+};
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

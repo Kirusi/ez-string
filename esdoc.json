@@ -1,0 +1,27 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "lint": {"enable": true},
+        "coverage": {"enable": true},
+        "accessor": {"access": ["public"], "autoPrivate": true},
+        "undocumentIdentifier": {"enable": true},
+        "unexportedIdentifier": {"enable": false},
+        "typeInference": {"enable": true},
+        "brand": {
+          "title": "ez-string Library",
+          "description": "A string template renderer for JavaScript without memory leaks.",
+          "repository": "https://github.com/Kirusi/ez-string",
+          "site": "https://github.com/Kirusi/ez-string",
+          "author": "https://github.com/Kirusi"
+        }
+      }
+    },
+    {
+      "name": "esdoc-node"
+    }
+  ]
+}

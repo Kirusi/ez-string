@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/private/raw-parser.js | ez-string Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A string template renderer for JavaScript without memory leaks."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="ez-string Library"><meta property="twitter:description" content="A string template renderer for JavaScript without memory leaks."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/Kirusi/ez-string"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#private">private</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/private/raw-parser.js~RawParser.html">RawParser</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#public">public</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/private/raw-parser.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&apos;use strict&apos;;
+const fs = require(&apos;fs&apos;);
+const Parser = require(&apos;jison&apos;).Parser;
+
+let grammar = {
+    &apos;lex&apos;: {
+        &apos;startConditions&apos;: {&apos;expr&apos;: 1, &apos;string&apos;: 2},
+        &apos;macros&apos;: {
+            &apos;esc&apos;: &apos;\\\\&apos;,
+            &apos;int&apos;: &apos;[0-9]+&apos;,
+        },
+        // === LEXER RULES ===
+        &apos;rules&apos;: [
+            // PLAIN TEXT RULES
+
+            /* Anything but curly braces is accepted as is.
+               Parentheses need special handling starting with Node 10*/
+            [[&apos;INITIAL&apos;], &apos;(?:[^\\{\\}]|\\n|[\\(\\)])+&apos;, &apos;return \&apos;TEXT\&apos;;&apos;],
+            // double quotes are converted into single quotes
+            [[&apos;INITIAL&apos;], &apos;{{&apos;, &apos;yytext=\&apos;\\{\&apos;; return \&apos;TEXT\&apos;;&apos;],
+            [[&apos;INITIAL&apos;], &apos;}}&apos;, &apos;yytext=\&apos;\\}\&apos;; return \&apos;TEXT\&apos;;&apos;],
+
+            // EXPRESSION RULES
+
+            // opening curly brace: switch to expression parsing mode
+            [[&apos;INITIAL&apos;], &apos;\\{&apos;, &apos;this.begin(\&apos;expr\&apos;); return \&apos;{\&apos;;&apos;],
+            // closing curly brace: expression is complete. Switch back to plain text mode
+            [[&apos;expr&apos;], &apos;\\}&apos;, &apos;this.popState(); return \&apos;}\&apos;;&apos;],
+
+            // whitespace inside curlies is ignored
+            [[&apos;expr&apos;], &apos;\\s+&apos;, &apos;/* skip whitespace */&apos;],
+            [[&apos;expr&apos;], &apos;{int}&apos;, &apos;return \&apos;NUMBER\&apos;;&apos;],
+            /* Proper regex for JavaScript identifiers requires unicode support in the regex engine
+               node.js currently doesn&apos;t support it
+               /^[\\$\\_\\p{L}\\p{Nl}][\\$\\_\\p{L}\\p{Nl}\\p{Mn}\\p{Mc}\\p{Nd}\\p{Pc}]*$/
+               Until such support is implemented the parser recognizes field identifiers that contain:
+               dollar-sign, underscore, latin characters and digits
+            */
+            [[&apos;expr&apos;], &apos;[\\$\\_A-Za-z][\\$\\_A-Za-z0-9]*&apos;, &apos;return \&apos;ID\&apos;;&apos;],
+            // period: must be followed by a field name
+            [[&apos;expr&apos;], &apos;\\.&apos;, &apos;return \&apos;.\&apos;;&apos;],
+            // brackets: envelope an index or a field name
+            [[&apos;expr&apos;], &apos;\\[&apos;, &apos;return \&apos;\\[\&apos;;&apos;],
+            [[&apos;expr&apos;], &apos;\\]&apos;, &apos;return \&apos;\\]\&apos;;&apos;],
+
+            // IRREGULAR IDENTIFIER RULES
+
+            /* opening quote: we expect an irregular field name to be enveloped in quotes.
+               Switch to irregular identifier parsing mode */
+            [[&apos;expr&apos;], &apos;\\&quot;&apos;, &apos;this.begin(\&apos;string\&apos;); return \&apos;QUOTE\&apos;;&apos;],
+            // closing quote: switch back to expression parsing mode
+            [[&apos;string&apos;], &apos;\\&quot;&apos;, &apos;this.popState(); return \&apos;QUOTE\&apos;;&apos;],
+            /* anything but backslashes and quotes is allowed and accepted as is.
+               Parentheses need special handling starting with Node 10*/
+            [[&apos;string&apos;], &apos;(:?[^&quot;{esc}]|[\\(\\)])+&apos;, &apos;return \&apos;STRING\&apos;;&apos;],
+            // double escape: is converted to a single escape
+            [[&apos;string&apos;], &apos;{esc}{esc}&apos;, &apos;yytext = \&apos;\\\\\&apos;; return \&apos;STRING\&apos;;&apos;],
+            // &lt;escape&gt; + &lt;quote&gt; is converted into a quote character
+            [[&apos;string&apos;], &apos;{esc}&quot;&apos;, &apos;yytext = \&apos;&quot;\&apos;; return \&apos;STRING\&apos;;&apos;],
+            // &lt;escape&gt; + &lt;char&gt; is accepted as is
+            [[&apos;string&apos;], &apos;{esc}.&apos;, &apos;return \&apos;STRING\&apos;;&apos;],
+
+            // End of parsed text
+            [&apos;$&apos;, &apos;return \&apos;EOF\&apos;;&apos;]
+        ]
+    },
+
+    // === PARSER RULES ===
+    &apos;bnf&apos;: {
+        &apos;contents&apos;: [[ &apos;content EOF&apos;, &apos;{ return $1; }&apos; ]],
+        &apos;content&apos;: [
+            // template starts with text
+            [&apos;TEXT&apos;, &apos;{ $$ = $1; }&apos;],
+            // template starts with a variable value
+            [&apos;{ value }&apos;, &apos;{ $$ = $2; }&apos;],
+            // append text to a template
+            [&apos;content TEXT&apos;, &apos;{ $$ = $1 + $2; }&apos;],
+            // append variable value to a template
+            [&apos;content { value }&apos;, &apos;{ $$ = $1 + $3; }&apos;],
+        ],
+        &apos;value&apos;: [
+            // positional parameter
+            [ &apos;NUMBER&apos;, &apos;{ let argPos = parseInt($1, 10); $$=yy.ctx[argPos]; }&apos; ],
+            // parameter is specified by name with possible fields and indices
+            [ &apos;expr&apos;, &apos;{ $$=yy.stack; yy.stack=undefined; }&apos; ],
+        ],
+        &apos;expr&apos;: [
+            // variable name
+            [&apos;ID&apos;, &apos;{ yy.stack=yy.ctx[0][$1]; }&apos;],
+            // array index
+            [&apos;expr [ NUMBER ]&apos;, &apos;{ let argPos = parseInt($3, 10); yy.stack=yy.stack[argPos]; }&apos;],
+            // object field
+            [&apos;expr . ID&apos;, &apos;{ yy.stack=yy.stack[$3]; }&apos;],
+            // irregular field name enclosed in quotes
+            [&apos;expr [ QUOTE identifier QUOTE ]&apos;, &apos;{ yy.stack=yy.stack[$4]; }&apos;],
+            [&apos;expr [ QUOTE QUOTE ]&apos;, &apos;{ yy.stack=yy.stack[&quot;&quot;]; }&apos;] //empty identifier
+        ],
+        &apos;identifier&apos;: [
+            // concatenate identifier consisting of multiple parts, such as escaped quotes
+            [&apos;STRING&apos;, &apos;{ $$ = $1; }&apos;],
+            [&apos;identifier STRING&apos;, &apos;{ $$ = $1 + $2; }&apos;],
+        ]
+    }
+};
+
+/* using a global parser instance
+   Instantiation of parser is quite heavy and requires a significant amount of RAM
+   This is very different for generated parser code. */
+let parser = new Parser(grammar);
+
+/**
+ * Parser class uses the grammar defintion above.
+ * It can be used for testing, but one must use the generated parser code for production purposes
+ */
+class RawParser {
+    /**
+     * Render template using Parser library
+     * @param {*} template - string with positional or named parameters enclosed in curly braces
+     * @param  {...any} args - either multiple values when using positional parameters,
+     *                         or a single objects with names of the fields corresponding to the names used in the template
+     */
+    static render(template, ...args) {
+        parser.yy.ctx = args;
+        let result = parser.parse(template);
+        return result;
+    }
+
+    /**
+     * Generate source code for a standalone parser
+     */
+    /* istanbul ignore next */
+    static generateCode() {
+        let parserSource = parser.generate();
+        return parserSource;
+    }
+}
+
+module.exports = RawParser;</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

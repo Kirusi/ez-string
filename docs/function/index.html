@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Function | ez-string Library</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A string template renderer for JavaScript without memory leaks."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="ez-string Library"><meta property="twitter:description" content="A string template renderer for JavaScript without memory leaks."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/Kirusi/ez-string"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#private">private</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/private/raw-parser.js~RawParser.html">RawParser</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#public">public</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">Function</h1>
+<div data-ice="summaries"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Static Public Summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span><span class="code" data-ice="signature">(template: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, args: ...<span>any</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Renders a template by substituting variable placeholders with provided data.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="details"><h2 data-ice="title">Static Public </h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-render">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">render</span><span class="code" data-ice="signature">(template: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, args: ...<span>any</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/public/ez-string.js.html#lineNumber64">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {render} from &apos;<span><a href="file/src/public/ez-string.js.html#lineNumber64">ez-string/src/public/ez-string.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Renders a template by substituting variable placeholders with provided data.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">template</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>string with positional or named parameters enclosed in curly braces</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">args</td>
+      <td data-ice="type" class="code">...<span>any</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>either multiple values when using positional parameters,
+                        or a single objects with names of the fields corresponding to the names used in the template</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>template string with interpolated variables</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">const render = require(&apos;ez-string&apos;);
+let book;
+
+// Format using variable&apos;s position
+book = render(&apos;One of my favorite books is &quot;{0}&quot; by {1}.&apos;, &apos;The Name of the Wind&apos;, &apos;Patrick Rothfuss&apos;);
+// book = &apos;One of my favorite books is &quot;The Name of the Wind&quot; by Patrick Rothfuss.&apos;
+
+// Format using variable&apos;s name
+// Variable names must use A-Za-z0-9$_
+book = render(&apos;One of my favorite books is &quot;{title}&quot; by {author}.&apos;,
+     { title: &apos;The Name of the Wind&apos;, author: &apos;Patrick Rothfuss&apos;});
+// book = &apos;One of my favorite books is &quot;The Name of the Wind&quot; by Patrick Rothfuss.&apos;
+
+// Curly braces are escaped by using double braces
+let example;
+example = render(&apos;{{title}}&apos;);
+// example = &apos;{title}&apos;
+
+// One can use array indices
+book = render(&apos;&quot;{arr[0]}&quot; was first published in {arr[1]}.&apos;,
+     { arr: [&apos;The Hobbit&apos;, 1937]});
+// book = &apos;&quot;The Hobbit&quot; was first published in 1937.&apos;
+
+// One can use object properties.
+// Properties with names consisting of A-Za-z0-9$_ can be accessed using property notation
+// Properties with other names can be accessed using index notation
+book = render(&apos;&quot;{book.title}&quot; was written by {book.author[&quot;first name&quot;]} {book.author[&quot;last name&quot;]}. It was published in {book.year}.&apos;, {
+         book: {
+             title: &apos;Marina&apos;,
+             year : 1999,
+             author: {
+                 &apos;first name&apos;: &apos;Carlos&apos;,
+                 &apos;last name&apos;: &apos;Zafon&apos;
+             }
+         }
+     });
+ // book = &apos;&quot;Marina&quot; was written by Carlos Zafon. It was published in 1999.&apos;
+
+// If a property name contains a quote character or backslash, they need to be escaped.
+// Quotes are prepended by a backslash
+// Backslashes need to be doubled
+example = render(&apos;{data[&quot;\\\\&quot;]}&apos;, {
+     data: {&apos;\\&apos;: &apos;backslash&apos;}
+});
+// example = &apos;backslash&apos;
+example = render(&apos;{data[&quot;\\&quot;&quot;]}&apos;, {
+     data: {&apos;&quot;&apos;: &apos;quote&apos;}
+});
+// example = &apos;quote&apos;</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
