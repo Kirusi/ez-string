@@ -98,4 +98,4 @@ The most important reason is that this library doesn't leak memory.
 
  Many of the existing template renderers perform a two-step process. They compile a string template into a JavaScript function and then execute it while passing context data. However, most users of such libraries rarely cache the resulting compiled function. Instead they may compile the same template again and again. Due to inticacies of NodeJS memory garbage collection. Such pattern usually results in a memory leak, as described by [Meteor developers.](https://blog.meteor.com/an-interesting-kind-of-javascript-memory-leak-8b47d2e7f156)
 
-Library documentation is [here.](https://kirusi.github.io/ez-string/docs/index.html)
+Library documentation is [here.](https://kirusi.github.io/ez-string/)

@@ -4,9 +4,9 @@
     "kind": "external",
     "name": "Infinity",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Infinity",
+    "longname": "public/.external-ecmascript.js~Infinity",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -16,9 +16,9 @@
     "kind": "external",
     "name": "NaN",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~NaN",
+    "longname": "public/.external-ecmascript.js~NaN",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -28,9 +28,9 @@
     "kind": "external",
     "name": "undefined",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~undefined",
+    "longname": "public/.external-ecmascript.js~undefined",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -40,9 +40,9 @@
     "kind": "external",
     "name": "null",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~null",
+    "longname": "public/.external-ecmascript.js~null",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -52,9 +52,9 @@
     "kind": "external",
     "name": "Object",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Object",
+    "longname": "public/.external-ecmascript.js~Object",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -64,9 +64,9 @@
     "kind": "external",
     "name": "object",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~object",
+    "longname": "public/.external-ecmascript.js~object",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -76,9 +76,9 @@
     "kind": "external",
     "name": "Function",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Function",
+    "longname": "public/.external-ecmascript.js~Function",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -88,9 +88,9 @@
     "kind": "external",
     "name": "function",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~function",
+    "longname": "public/.external-ecmascript.js~function",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -100,9 +100,9 @@
     "kind": "external",
     "name": "Boolean",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Boolean",
+    "longname": "public/.external-ecmascript.js~Boolean",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -112,9 +112,9 @@
     "kind": "external",
     "name": "boolean",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~boolean",
+    "longname": "public/.external-ecmascript.js~boolean",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -124,9 +124,9 @@
     "kind": "external",
     "name": "Symbol",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Symbol",
+    "longname": "public/.external-ecmascript.js~Symbol",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -136,9 +136,9 @@
     "kind": "external",
     "name": "Error",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Error",
+    "longname": "public/.external-ecmascript.js~Error",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -148,9 +148,9 @@
     "kind": "external",
     "name": "EvalError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~EvalError",
+    "longname": "public/.external-ecmascript.js~EvalError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -160,9 +160,9 @@
     "kind": "external",
     "name": "InternalError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~InternalError",
+    "longname": "public/.external-ecmascript.js~InternalError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -172,9 +172,9 @@
     "kind": "external",
     "name": "RangeError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~RangeError",
+    "longname": "public/.external-ecmascript.js~RangeError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -184,9 +184,9 @@
     "kind": "external",
     "name": "ReferenceError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "longname": "public/.external-ecmascript.js~ReferenceError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -196,9 +196,9 @@
     "kind": "external",
     "name": "SyntaxError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "longname": "public/.external-ecmascript.js~SyntaxError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -208,9 +208,9 @@
     "kind": "external",
     "name": "TypeError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~TypeError",
+    "longname": "public/.external-ecmascript.js~TypeError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -220,9 +220,9 @@
     "kind": "external",
     "name": "URIError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~URIError",
+    "longname": "public/.external-ecmascript.js~URIError",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -232,9 +232,9 @@
     "kind": "external",
     "name": "Number",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Number",
+    "longname": "public/.external-ecmascript.js~Number",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -244,9 +244,9 @@
     "kind": "external",
     "name": "number",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~number",
+    "longname": "public/.external-ecmascript.js~number",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -256,9 +256,9 @@
     "kind": "external",
     "name": "Date",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Date",
+    "longname": "public/.external-ecmascript.js~Date",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -268,9 +268,9 @@
     "kind": "external",
     "name": "String",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~String",
+    "longname": "public/.external-ecmascript.js~String",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -280,9 +280,9 @@
     "kind": "external",
     "name": "string",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~string",
+    "longname": "public/.external-ecmascript.js~string",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -292,9 +292,9 @@
     "kind": "external",
     "name": "RegExp",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~RegExp",
+    "longname": "public/.external-ecmascript.js~RegExp",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -304,9 +304,9 @@
     "kind": "external",
     "name": "Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Array",
+    "longname": "public/.external-ecmascript.js~Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -316,9 +316,9 @@
     "kind": "external",
     "name": "Int8Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Int8Array",
+    "longname": "public/.external-ecmascript.js~Int8Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -328,9 +328,9 @@
     "kind": "external",
     "name": "Uint8Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "longname": "public/.external-ecmascript.js~Uint8Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -340,9 +340,9 @@
     "kind": "external",
     "name": "Uint8ClampedArray",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "longname": "public/.external-ecmascript.js~Uint8ClampedArray",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -352,9 +352,9 @@
     "kind": "external",
     "name": "Int16Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Int16Array",
+    "longname": "public/.external-ecmascript.js~Int16Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -364,9 +364,9 @@
     "kind": "external",
     "name": "Uint16Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "longname": "public/.external-ecmascript.js~Uint16Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -376,9 +376,9 @@
     "kind": "external",
     "name": "Int32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Int32Array",
+    "longname": "public/.external-ecmascript.js~Int32Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -388,9 +388,9 @@
     "kind": "external",
     "name": "Uint32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "longname": "public/.external-ecmascript.js~Uint32Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -400,9 +400,9 @@
     "kind": "external",
     "name": "Float32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Float32Array",
+    "longname": "public/.external-ecmascript.js~Float32Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -412,9 +412,9 @@
     "kind": "external",
     "name": "Float64Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Float64Array",
+    "longname": "public/.external-ecmascript.js~Float64Array",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -424,9 +424,9 @@
     "kind": "external",
     "name": "Map",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Map",
+    "longname": "public/.external-ecmascript.js~Map",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -436,9 +436,9 @@
     "kind": "external",
     "name": "Set",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Set",
+    "longname": "public/.external-ecmascript.js~Set",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -448,9 +448,9 @@
     "kind": "external",
     "name": "WeakMap",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~WeakMap",
+    "longname": "public/.external-ecmascript.js~WeakMap",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -460,9 +460,9 @@
     "kind": "external",
     "name": "WeakSet",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~WeakSet",
+    "longname": "public/.external-ecmascript.js~WeakSet",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -472,9 +472,9 @@
     "kind": "external",
     "name": "ArrayBuffer",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "longname": "public/.external-ecmascript.js~ArrayBuffer",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -484,9 +484,9 @@
     "kind": "external",
     "name": "DataView",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~DataView",
+    "longname": "public/.external-ecmascript.js~DataView",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -496,9 +496,9 @@
     "kind": "external",
     "name": "JSON",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~JSON",
+    "longname": "public/.external-ecmascript.js~JSON",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -508,9 +508,9 @@
     "kind": "external",
     "name": "Promise",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Promise",
+    "longname": "public/.external-ecmascript.js~Promise",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -520,9 +520,9 @@
     "kind": "external",
     "name": "Generator",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Generator",
+    "longname": "public/.external-ecmascript.js~Generator",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -532,9 +532,9 @@
     "kind": "external",
     "name": "GeneratorFunction",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "longname": "public/.external-ecmascript.js~GeneratorFunction",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -544,9 +544,9 @@
     "kind": "external",
     "name": "Reflect",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Reflect",
+    "longname": "public/.external-ecmascript.js~Reflect",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -556,9 +556,9 @@
     "kind": "external",
     "name": "Proxy",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "memberof": "src/.external-ecmascript.js",
+    "memberof": "public/.external-ecmascript.js",
     "static": true,
-    "longname": "src/.external-ecmascript.js~Proxy",
+    "longname": "public/.external-ecmascript.js~Proxy",
     "access": "public",
     "description": "",
     "builtinExternal": true
@@ -566,250 +566,7 @@
   {
     "__docId__": 48,
     "kind": "file",
-    "name": "src/private/generator.js",
-    "content": "'use strict';\r\n\r\nconst RawParser = require('./raw-parser');\r\nconst path = require('path');\r\nconst fs = require('fs');\r\n\r\n// Construct path for generated parser's source location\r\nlet srcDir = path.join(__dirname, '..', '..', 'generated');\r\nfs.mkdirSync(srcDir, { recursive: true });\r\nlet srcPath = path.join(srcDir, 'generated-parser.js');\r\n\r\n/* Prolog of generated source code is incompatible with webpack\r\n   We will replace it with a simpler version */\r\nlet prolog = `\r\nif (typeof require !== 'undefined' && typeof exports !== 'undefined') {\r\n    exports.parser = parser;\r\n    exports.Parser = parser.Parser;\r\n    exports.parse = function () { return parser.parse.apply(parser, arguments); };\r\n}`;\r\n\r\nlet srcCode = RawParser.generateCode();\r\n\r\n/* Write generated source code into a file. Replace for prolog\r\n   First line of generated prolog contains the word 'export' */\r\nlet stream = fs.createWriteStream(srcPath);\r\ntry {\r\n    let lines = srcCode.split('\\n');\r\n    for (let line of lines) {\r\n        if (line.includes('export')) {\r\n            break;\r\n        }\r\n        stream.write(`${line}\\n`);\r\n    }\r\n    stream.write(prolog);\r\n}\r\nfinally {\r\n    stream.end(); // close stream\r\n}\r\n",
-    "static": true,
-    "longname": "D:/Personal/Projects/ez-string/src/private/generator.js",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 49,
-    "kind": "variable",
-    "name": "srcDir",
-    "memberof": "src/private/generator.js",
-    "static": true,
-    "longname": "src/private/generator.js~srcDir",
-    "access": "public",
-    "export": false,
-    "importPath": "ez-string/src/private/generator.js",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 8,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    },
-    "ignore": true
-  },
-  {
-    "__docId__": 50,
-    "kind": "variable",
-    "name": "srcPath",
-    "memberof": "src/private/generator.js",
-    "static": true,
-    "longname": "src/private/generator.js~srcPath",
-    "access": "public",
-    "export": false,
-    "importPath": "ez-string/src/private/generator.js",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 10,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    },
-    "ignore": true
-  },
-  {
-    "__docId__": 51,
-    "kind": "variable",
-    "name": "prolog",
-    "memberof": "src/private/generator.js",
-    "static": true,
-    "longname": "src/private/generator.js~prolog",
-    "access": "public",
-    "export": false,
-    "importPath": "ez-string/src/private/generator.js",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 14,
-    "undocument": true,
-    "type": {
-      "types": [
-        "string"
-      ]
-    },
-    "ignore": true
-  },
-  {
-    "__docId__": 52,
-    "kind": "variable",
-    "name": "srcCode",
-    "memberof": "src/private/generator.js",
-    "static": true,
-    "longname": "src/private/generator.js~srcCode",
-    "access": "public",
-    "export": false,
-    "importPath": "ez-string/src/private/generator.js",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 21,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    },
-    "ignore": true
-  },
-  {
-    "__docId__": 53,
-    "kind": "variable",
-    "name": "stream",
-    "memberof": "src/private/generator.js",
-    "static": true,
-    "longname": "src/private/generator.js~stream",
-    "access": "public",
-    "export": false,
-    "importPath": "ez-string/src/private/generator.js",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 25,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    },
-    "ignore": true
-  },
-  {
-    "__docId__": 54,
-    "kind": "file",
-    "name": "src/private/raw-parser.js",
-    "content": "'use strict';\r\nconst fs = require('fs');\r\nconst Parser = require('jison').Parser;\r\n\r\nlet grammar = {\r\n    'lex': {\r\n        'startConditions': {'expr': 1, 'string': 2},\r\n        'macros': {\r\n            'esc': '\\\\\\\\',\r\n            'int': '[0-9]+',\r\n        },\r\n        // === LEXER RULES ===\r\n        'rules': [\r\n            // PLAIN TEXT RULES\r\n\r\n            /* Anything but curly braces is accepted as is.\r\n               Parentheses need special handling starting with Node 10*/\r\n            [['INITIAL'], '(?:[^\\\\{\\\\}]|\\\\n|[\\\\(\\\\)])+', 'return \\'TEXT\\';'],\r\n            // double quotes are converted into single quotes\r\n            [['INITIAL'], '{{', 'yytext=\\'\\\\{\\'; return \\'TEXT\\';'],\r\n            [['INITIAL'], '}}', 'yytext=\\'\\\\}\\'; return \\'TEXT\\';'],\r\n\r\n            // EXPRESSION RULES\r\n\r\n            // opening curly brace: switch to expression parsing mode\r\n            [['INITIAL'], '\\\\{', 'this.begin(\\'expr\\'); return \\'{\\';'],\r\n            // closing curly brace: expression is complete. Switch back to plain text mode\r\n            [['expr'], '\\\\}', 'this.popState(); return \\'}\\';'],\r\n\r\n            // whitespace inside curlies is ignored\r\n            [['expr'], '\\\\s+', '/* skip whitespace */'],\r\n            [['expr'], '{int}', 'return \\'NUMBER\\';'],\r\n            /* Proper regex for JavaScript identifiers requires unicode support in the regex engine\r\n               node.js currently doesn't support it\r\n               /^[\\\\$\\\\_\\\\p{L}\\\\p{Nl}][\\\\$\\\\_\\\\p{L}\\\\p{Nl}\\\\p{Mn}\\\\p{Mc}\\\\p{Nd}\\\\p{Pc}]*$/\r\n               Until such support is implemented the parser recognizes field identifiers that contain:\r\n               dollar-sign, underscore, latin characters and digits\r\n            */\r\n            [['expr'], '[\\\\$\\\\_A-Za-z][\\\\$\\\\_A-Za-z0-9]*', 'return \\'ID\\';'],\r\n            // period: must be followed by a field name\r\n            [['expr'], '\\\\.', 'return \\'.\\';'],\r\n            // brackets: envelope an index or a field name\r\n            [['expr'], '\\\\[', 'return \\'\\\\[\\';'],\r\n            [['expr'], '\\\\]', 'return \\'\\\\]\\';'],\r\n\r\n            // IRREGULAR IDENTIFIER RULES\r\n\r\n            /* opening quote: we expect an irregular field name to be enveloped in quotes.\r\n               Switch to irregular identifier parsing mode */\r\n            [['expr'], '\\\\\"', 'this.begin(\\'string\\'); return \\'QUOTE\\';'],\r\n            // closing quote: switch back to expression parsing mode\r\n            [['string'], '\\\\\"', 'this.popState(); return \\'QUOTE\\';'],\r\n            /* anything but backslashes and quotes is allowed and accepted as is.\r\n               Parentheses need special handling starting with Node 10*/\r\n            [['string'], '(:?[^\"{esc}]|[\\\\(\\\\)])+', 'return \\'STRING\\';'],\r\n            // double escape: is converted to a single escape\r\n            [['string'], '{esc}{esc}', 'yytext = \\'\\\\\\\\\\'; return \\'STRING\\';'],\r\n            // <escape> + <quote> is converted into a quote character\r\n            [['string'], '{esc}\"', 'yytext = \\'\"\\'; return \\'STRING\\';'],\r\n            // <escape> + <char> is accepted as is\r\n            [['string'], '{esc}.', 'return \\'STRING\\';'],\r\n\r\n            // End of parsed text\r\n            ['$', 'return \\'EOF\\';']\r\n        ]\r\n    },\r\n\r\n    // === PARSER RULES ===\r\n    'bnf': {\r\n        'contents': [[ 'content EOF', '{ return $1; }' ]],\r\n        'content': [\r\n            // template starts with text\r\n            ['TEXT', '{ $$ = $1; }'],\r\n            // template starts with a variable value\r\n            ['{ value }', '{ $$ = $2; }'],\r\n            // append text to a template\r\n            ['content TEXT', '{ $$ = $1 + $2; }'],\r\n            // append variable value to a template\r\n            ['content { value }', '{ $$ = $1 + $3; }'],\r\n        ],\r\n        'value': [\r\n            // positional parameter\r\n            [ 'NUMBER', '{ let argPos = parseInt($1, 10); $$=yy.ctx[argPos]; }' ],\r\n            // parameter is specified by name with possible fields and indices\r\n            [ 'expr', '{ $$=yy.stack; yy.stack=undefined; }' ],\r\n        ],\r\n        'expr': [\r\n            // variable name\r\n            ['ID', '{ yy.stack=yy.ctx[0][$1]; }'],\r\n            // array index\r\n            ['expr [ NUMBER ]', '{ let argPos = parseInt($3, 10); yy.stack=yy.stack[argPos]; }'],\r\n            // object field\r\n            ['expr . ID', '{ yy.stack=yy.stack[$3]; }'],\r\n            // irregular field name enclosed in quotes\r\n            ['expr [ QUOTE identifier QUOTE ]', '{ yy.stack=yy.stack[$4]; }'],\r\n            ['expr [ QUOTE QUOTE ]', '{ yy.stack=yy.stack[\"\"]; }'] //empty identifier\r\n        ],\r\n        'identifier': [\r\n            // concatenate identifier consisting of multiple parts, such as escaped quotes\r\n            ['STRING', '{ $$ = $1; }'],\r\n            ['identifier STRING', '{ $$ = $1 + $2; }'],\r\n        ]\r\n    }\r\n};\r\n\r\n/* using a global parser instance\r\n   Instantiation of parser is quite heavy and requires a significant amount of RAM\r\n   This is very different for generated parser code. */\r\nlet parser = new Parser(grammar);\r\n\r\n/**\r\n * Parser class uses the grammar defintion above.\r\n * It can be used for testing, but one must use the generated parser code for production purposes\r\n */\r\nclass RawParser {\r\n    /**\r\n     * Render template using Parser library\r\n     * @param {*} template - string with positional or named parameters enclosed in curly braces\r\n     * @param  {...any} args - either multiple values when using positional parameters,\r\n     *                         or a single objects with names of the fields corresponding to the names used in the template\r\n     */\r\n    static render(template, ...args) {\r\n        parser.yy.ctx = args;\r\n        let result = parser.parse(template);\r\n        return result;\r\n    }\r\n\r\n    /**\r\n     * Generate source code for a standalone parser\r\n     */\r\n    /* istanbul ignore next */\r\n    static generateCode() {\r\n        let parserSource = parser.generate();\r\n        return parserSource;\r\n    }\r\n}\r\n\r\nmodule.exports = RawParser;",
-    "static": true,
-    "longname": "D:/Personal/Projects/ez-string/src/private/raw-parser.js",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 55,
-    "kind": "variable",
-    "name": "grammar",
-    "memberof": "src/private/raw-parser.js",
-    "static": true,
-    "longname": "src/private/raw-parser.js~grammar",
-    "access": "public",
-    "export": false,
-    "importPath": "ez-string/src/private/raw-parser.js",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
-    "type": {
-      "types": [
-        "{\"lex\": *, \"bnf\": *}"
-      ]
-    },
-    "ignore": true
-  },
-  {
-    "__docId__": 56,
-    "kind": "variable",
-    "name": "parser",
-    "memberof": "src/private/raw-parser.js",
-    "static": true,
-    "longname": "src/private/raw-parser.js~parser",
-    "access": "public",
-    "export": false,
-    "importPath": "ez-string/src/private/raw-parser.js",
-    "importStyle": null,
-    "description": null,
-    "lineNumber": 109,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    },
-    "ignore": true
-  },
-  {
-    "__docId__": 57,
-    "kind": "class",
-    "name": "RawParser",
-    "memberof": "src/private/raw-parser.js",
-    "static": true,
-    "longname": "src/private/raw-parser.js~RawParser",
-    "access": "public",
-    "export": true,
-    "importPath": "ez-string/src/private/raw-parser.js",
-    "importStyle": "RawParser",
-    "description": "Parser class uses the grammar defintion above.\nIt can be used for testing, but one must use the generated parser code for production purposes",
-    "lineNumber": 115,
-    "interface": false
-  },
-  {
-    "__docId__": 58,
-    "kind": "method",
-    "name": "render",
-    "memberof": "src/private/raw-parser.js~RawParser",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/private/raw-parser.js~RawParser.render",
-    "access": "public",
-    "description": "Render template using Parser library",
-    "lineNumber": 122,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "*"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "template",
-        "description": "string with positional or named parameters enclosed in curly braces"
-      },
-      {
-        "nullable": null,
-        "types": [
-          "...any"
-        ],
-        "spread": true,
-        "optional": false,
-        "name": "args",
-        "description": "either multiple values when using positional parameters,\n                        or a single objects with names of the fields corresponding to the names used in the template"
-      }
-    ],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 59,
-    "kind": "method",
-    "name": "generateCode",
-    "memberof": "src/private/raw-parser.js~RawParser",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/private/raw-parser.js~RawParser.generateCode",
-    "access": "public",
-    "description": "Generate source code for a standalone parser",
-    "lineNumber": 132,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 60,
-    "kind": "file",
-    "name": "src/public/ez-string.js",
+    "name": "public/ez-string.js",
     "content": "'use strict';\r\n\r\nconst GeneratedParser = require('../../generated/generated-parser');\r\n\r\n/**\r\n * Renders a template by substituting variable placeholders with provided data.\r\n *\r\n * @param {string} template - string with positional or named parameters enclosed in curly braces\r\n * @param  {...any} args - either multiple values when using positional parameters,\r\n *                         or a single objects with names of the fields corresponding to the names used in the template\r\n * @returns {string} - template string with interpolated variables\r\n *\r\n * @example\r\n * const render = require('ez-string');\r\n * let book;\r\n *\r\n * // Format using variable's position\r\n * book = render('One of my favorite books is \"{0}\" by {1}.', 'The Name of the Wind', 'Patrick Rothfuss');\r\n * // book = 'One of my favorite books is \"The Name of the Wind\" by Patrick Rothfuss.'\r\n *\r\n * // Format using variable's name\r\n * // Variable names must use A-Za-z0-9$_\r\n * book = render('One of my favorite books is \"{title}\" by {author}.',\r\n *      { title: 'The Name of the Wind', author: 'Patrick Rothfuss'});\r\n * // book = 'One of my favorite books is \"The Name of the Wind\" by Patrick Rothfuss.'\r\n *\r\n * // Curly braces are escaped by using double braces\r\n * let example;\r\n * example = render('{{title}}');\r\n * // example = '{title}'\r\n *\r\n * // One can use array indices\r\n * book = render('\"{arr[0]}\" was first published in {arr[1]}.',\r\n *      { arr: ['The Hobbit', 1937]});\r\n * // book = '\"The Hobbit\" was first published in 1937.'\r\n *\r\n * // One can use object properties.\r\n * // Properties with names consisting of A-Za-z0-9$_ can be accessed using property notation\r\n * // Properties with other names can be accessed using index notation\r\n * book = render('\"{book.title}\" was written by {book.author[\"first name\"]} {book.author[\"last name\"]}. It was published in {book.year}.', {\r\n *          book: {\r\n *              title: 'Marina',\r\n *              year : 1999,\r\n *              author: {\r\n *                  'first name': 'Carlos',\r\n *                  'last name': 'Zafon'\r\n *              }\r\n *          }\r\n *      });\r\n *  // book = '\"Marina\" was written by Carlos Zafon. It was published in 1999.'\r\n *\r\n * // If a property name contains a quote character or backslash, they need to be escaped.\r\n * // Quotes are prepended by a backslash\r\n * // Backslashes need to be doubled\r\n * example = render('{data[\"\\\\\\\\\"]}', {\r\n *      data: {'\\\\': 'backslash'}\r\n * });\r\n * // example = 'backslash'\r\n * example = render('{data[\"\\\\\"\"]}', {\r\n *      data: {'\"': 'quote'}\r\n * });\r\n * // example = 'quote'\r\n */\r\nfunction render(template, ...args) {\r\n    /* Parser object is not re-entrant.\r\n       Instantiation of generated parser is light and fast. Create a new instance for every call. */\r\n    const parser = new GeneratedParser.Parser();\r\n    parser.yy.ctx = args;\r\n    let result = parser.parse(template);\r\n    return result;\r\n}\r\n\r\nmodule.exports = {\r\n    render\r\n};\r\n",
     "static": true,
     "longname": "D:/Personal/Projects/ez-string/src/public/ez-string.js",
@@ -818,17 +575,17 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 61,
+    "__docId__": 49,
     "kind": "function",
     "name": "render",
-    "memberof": "src/public/ez-string.js",
+    "memberof": "public/ez-string.js",
     "generator": false,
     "async": false,
     "static": true,
-    "longname": "src/public/ez-string.js~render",
+    "longname": "public/ez-string.js~render",
     "access": "public",
     "export": true,
-    "importPath": "ez-string/src/public/ez-string.js",
+    "importPath": "ez-string/public/ez-string.js",
     "importStyle": "{render}",
     "description": "Renders a template by substituting variable placeholders with provided data.",
     "examples": [
@@ -874,7 +631,7 @@
   },
   {
     "kind": "index",
-    "content": "# ez-string\r\nA string template renderer for JavaScript without memory leaks. It supports referencing variables by position, by name. One can access properties and array elements.\r\n\r\n## Example\r\n\r\n```js\r\nconst render = require('ez-string');\r\nlet book;\r\n\r\n// Format using variable's position\r\nbook = render('One of my favorite books is \"{0}\" by {1}.', 'The Name of the Wind', 'Patrick Rothfuss');\r\n// book = 'One of my favorite books is \"The Name of the Wind\" by Patrick Rothfuss.'\r\n\r\n// Format using variable's name\r\n// Variable names must use A-Za-z0-9$_\r\nbook = render('One of my favorite books is \"{title}\" by {author}.',\r\n    { title: 'The Name of the Wind', author: 'Patrick Rothfuss'});\r\n// book = 'One of my favorite books is \"The Name of the Wind\" by Patrick Rothfuss.'\r\n\r\n// Curly braces are escaped by using double braces\r\nlet example;\r\nexample = render('{{title}}');\r\n// example = '{title}'\r\n\r\n// One can use array indices\r\nbook = render('\"{arr[0]}\" was first published in {arr[1]}.',\r\n    { arr: ['The Hobbit', 1937]});\r\n// book = '\"The Hobbit\" was first published in 1937.'\r\n\r\n// One can use object properties.\r\n// Properties with names consisting of A-Za-z0-9$_ can be accessed using property notation\r\n// Properties with other names can be accessed using index notation\r\nbook = render('\"{book.title}\" was written by {book.author[\"first name\"]} {book.author[\"last name\"]}. It was published in {book.year}.', { \r\n        book: {\r\n            title: 'Marina',\r\n            year : 1999,\r\n            author: {\r\n                'first name': 'Carlos',\r\n                'last name': 'Zafon'\r\n            }\r\n        }\r\n    });\r\n// book = '\"Marina\" was written by Carlos Zafon. It was published in 1999.'\r\n\r\n// If a property name contains a quote character or backslash, they need to be escaped.\r\n// Quotes are prepended by a backslash\r\n// Backslashes need to be doubled\r\nexample = render('{data[\"\\\\\\\\\"]}', {\r\n    data: {'\\\\': 'backslash'}\r\n});\r\n// example = 'backslash'\r\nexample = render('{data[\"\\\\\"\"]}', {\r\n    data: {'\"': 'quote'}\r\n});\r\n// example = 'quote'\r\n```\r\n\r\n## Installation\r\n\r\nUsing NodeJS:\r\n```shell\r\n$ npm i --save ez-string\r\n```\r\n\r\n```js\r\nconst render = require('ez-string');\r\nlet book;\r\n\r\n// Format using variable's position\r\nbook = render('One of the best books by {author} is \"{title}\".', {\r\n    author: 'Stephen King',\r\n    title: '11/22/63'\r\n});\r\n// book = 'One of the best books by Stephen King is \"11/22/63\".'\r\n```\r\n\r\nIn a browser:\r\n```html\r\n<!-- Load library which is UMD packed -->\r\n<script src=\"ez-string.js\"></script>\r\n\r\n<script>\r\n    const render = require('ez-string');\r\n    let book;\r\n\r\n    // Format using variable's position\r\n    book = render('One of the best books by {author} is \"{title}\".', {\r\n        author: 'Stephen King',\r\n        title: '11/22/63'\r\n    });\r\n    // book = 'One of the best books by Stephen King is \"11/22/63\".'\r\n</script>\r\n```\r\n\r\n## Why ez-string\r\n \r\nThe most important reason is that this library doesn't leak memory.\r\n\r\n Many of the existing template renderers perform a two-step process. They compile a string template into a JavaScript function and then execute it while passing context data. However, most users of such libraries rarely cache the resulting compiled function. Instead they may compile the same template again and again. Due to inticacies of NodeJS memory garbage collection. Such pattern usually results in a memory leak, as described by [Meteor developers.](https://blog.meteor.com/an-interesting-kind-of-javascript-memory-leak-8b47d2e7f156)\r\n\r\nLibrary documentation is [here.](https://kirusi.github.io/ez-string/docs/index.html)\r\n",
+    "content": "# ez-string\r\nA string template renderer for JavaScript without memory leaks. It supports referencing variables by position, by name. One can access properties and array elements.\r\n\r\n## Example\r\n\r\n```js\r\nconst render = require('ez-string');\r\nlet book;\r\n\r\n// Format using variable's position\r\nbook = render('One of my favorite books is \"{0}\" by {1}.', 'The Name of the Wind', 'Patrick Rothfuss');\r\n// book = 'One of my favorite books is \"The Name of the Wind\" by Patrick Rothfuss.'\r\n\r\n// Format using variable's name\r\n// Variable names must use A-Za-z0-9$_\r\nbook = render('One of my favorite books is \"{title}\" by {author}.',\r\n    { title: 'The Name of the Wind', author: 'Patrick Rothfuss'});\r\n// book = 'One of my favorite books is \"The Name of the Wind\" by Patrick Rothfuss.'\r\n\r\n// Curly braces are escaped by using double braces\r\nlet example;\r\nexample = render('{{title}}');\r\n// example = '{title}'\r\n\r\n// One can use array indices\r\nbook = render('\"{arr[0]}\" was first published in {arr[1]}.',\r\n    { arr: ['The Hobbit', 1937]});\r\n// book = '\"The Hobbit\" was first published in 1937.'\r\n\r\n// One can use object properties.\r\n// Properties with names consisting of A-Za-z0-9$_ can be accessed using property notation\r\n// Properties with other names can be accessed using index notation\r\nbook = render('\"{book.title}\" was written by {book.author[\"first name\"]} {book.author[\"last name\"]}. It was published in {book.year}.', { \r\n        book: {\r\n            title: 'Marina',\r\n            year : 1999,\r\n            author: {\r\n                'first name': 'Carlos',\r\n                'last name': 'Zafon'\r\n            }\r\n        }\r\n    });\r\n// book = '\"Marina\" was written by Carlos Zafon. It was published in 1999.'\r\n\r\n// If a property name contains a quote character or backslash, they need to be escaped.\r\n// Quotes are prepended by a backslash\r\n// Backslashes need to be doubled\r\nexample = render('{data[\"\\\\\\\\\"]}', {\r\n    data: {'\\\\': 'backslash'}\r\n});\r\n// example = 'backslash'\r\nexample = render('{data[\"\\\\\"\"]}', {\r\n    data: {'\"': 'quote'}\r\n});\r\n// example = 'quote'\r\n```\r\n\r\n## Installation\r\n\r\nUsing NodeJS:\r\n```shell\r\n$ npm i --save ez-string\r\n```\r\n\r\n```js\r\nconst render = require('ez-string');\r\nlet book;\r\n\r\n// Format using variable's position\r\nbook = render('One of the best books by {author} is \"{title}\".', {\r\n    author: 'Stephen King',\r\n    title: '11/22/63'\r\n});\r\n// book = 'One of the best books by Stephen King is \"11/22/63\".'\r\n```\r\n\r\nIn a browser:\r\n```html\r\n<!-- Load library which is UMD packed -->\r\n<script src=\"ez-string.js\"></script>\r\n\r\n<script>\r\n    const render = require('ez-string');\r\n    let book;\r\n\r\n    // Format using variable's position\r\n    book = render('One of the best books by {author} is \"{title}\".', {\r\n        author: 'Stephen King',\r\n        title: '11/22/63'\r\n    });\r\n    // book = 'One of the best books by Stephen King is \"11/22/63\".'\r\n</script>\r\n```\r\n\r\n## Why ez-string\r\n \r\nThe most important reason is that this library doesn't leak memory.\r\n\r\n Many of the existing template renderers perform a two-step process. They compile a string template into a JavaScript function and then execute it while passing context data. However, most users of such libraries rarely cache the resulting compiled function. Instead they may compile the same template again and again. Due to inticacies of NodeJS memory garbage collection. Such pattern usually results in a memory leak, as described by [Meteor developers.](https://blog.meteor.com/an-interesting-kind-of-javascript-memory-leak-8b47d2e7f156)\r\n\r\nLibrary documentation is [here.](https://kirusi.github.io/ez-string/)\r\n",
     "longname": "D:\\Personal\\Projects\\ez-string\\README.md",
     "name": "./README.md",
     "static": true,
@@ -882,7 +639,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"ez-string\",\n  \"version\": \"1.1.6\",\n  \"description\": \"A string template renderer for JavaScript without memory leaks.\",\n  \"main\": \"ez-string.js\",\n  \"scripts\": {\n    \"esdoc\": \"esdoc -c ./esdoc.json\",\n    \"eslint-fix\": \"eslint --config=./config/eslint.config.json --fix src/**/*.js test/**/*.js gulpfile.js\",\n    \"eslint-watch\": \"esw --config=./config/eslint.config.json -w --fix src/**/*.js test/**/*.js gulpfile.js\",\n    \"generate\": \"node ./src/private/generator.js\",\n    \"test-watch\": \"cross-env TEST_MODE=DEV mocha --reporter spec -w --recursive test/specs/*.spec.js\",\n    \"dev-test\": \"cross-env TEST_MODE=DEV nyc --reporter=html --reporter=text --report-dir=./build/coverage --check-coverage --lines 100 --functions 100 --branches 100 mocha --reporter spec test/specs/*.spec.js\",\n    \"gen-test\": \"cross-env TEST_MODE=GEN nyc --reporter=html --reporter=text --report-dir=./build/generated-coverage mocha --reporter spec test/specs/*.spec.js\",\n    \"test\": \"cross-env TEST_MODE=DEV nyc --reporter=html --reporter=text --report-dir=./build/coverage mocha --reporter spec test/specs/*.spec.js\",\n    \"prod-test\": \"nyc --reporter=html --reporter=text --report-dir=./build/postbuild-coverage mocha --reporter spec test/specs/*.spec.js\",\n    \"web-test\": \"mocha --reporter spec test/browser/*.spec.js\",\n    \"webpack\": \"webpack --config ./config/webpack.config.js\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/Kirusi/ez-string.git\"\n  },\n  \"keywords\": [\n    \"string\",\n    \"template\",\n    \"render\",\n    \"interpolation\",\n    \"variable\",\n    \"substitution\"\n  ],\n  \"author\": \"Kirusi Msafiri\",\n  \"license\": \"0BSD\",\n  \"bugs\": {\n    \"url\": \"https://github.com/Kirusi/ez-string/issues\"\n  },\n  \"homepage\": \"https://github.com/Kirusi/ez-string#readme\",\n  \"devDependencies\": {\n    \"coveralls\": \"^3.0.0\",\n    \"cross-env\": \"^5.2.0\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-node\": \"^1.0.2\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^4.18.2\",\n    \"eslint-watch\": \"^3.1.3\",\n    \"gulp\": \"^4.0.0\",\n    \"gulp-util\": \"^3.0.8\",\n    \"jison\": \"^0.4.18\",\n    \"mocha\": \"^4.1.0\",\n    \"mocha-lcov-reporter\": \"^1.3.0\",\n    \"nyc\": \"^11.4.1\",\n    \"selenium-webdriver\": \"^4.0.0-alpha.1\",\n    \"should\": \"^13.1.3\",\n    \"webpack\": \"^3.10.0\"\n  }\n}\n",
+    "content": "{\r\n  \"name\": \"ez-string\",\r\n  \"version\": \"1.1.6\",\r\n  \"description\": \"A string template renderer for JavaScript without memory leaks.\",\r\n  \"main\": \"ez-string.js\",\r\n  \"scripts\": {\r\n    \"esdoc\": \"esdoc -c ./esdoc.json\",\r\n    \"eslint-fix\": \"eslint --config=./config/eslint.config.json --fix src/**/*.js test/**/*.js gulpfile.js\",\r\n    \"eslint-watch\": \"esw --config=./config/eslint.config.json -w --fix src/**/*.js test/**/*.js gulpfile.js\",\r\n    \"generate\": \"node ./src/private/generator.js\",\r\n    \"test-watch\": \"cross-env TEST_MODE=DEV mocha --reporter spec -w --recursive test/specs/*.spec.js\",\r\n    \"dev-test\": \"cross-env TEST_MODE=DEV nyc --reporter=html --reporter=text --report-dir=./build/coverage --check-coverage --lines 100 --functions 100 --branches 100 mocha --reporter spec test/specs/*.spec.js\",\r\n    \"gen-test\": \"cross-env TEST_MODE=GEN nyc --reporter=html --reporter=text --report-dir=./build/generated-coverage mocha --reporter spec test/specs/*.spec.js\",\r\n    \"test\": \"cross-env TEST_MODE=DEV nyc --reporter=html --reporter=text --report-dir=./build/coverage mocha --reporter spec test/specs/*.spec.js\",\r\n    \"prod-test\": \"nyc --reporter=html --reporter=text --report-dir=./build/postbuild-coverage mocha --reporter spec test/specs/*.spec.js\",\r\n    \"web-test\": \"mocha --reporter spec test/browser/*.spec.js\",\r\n    \"webpack\": \"webpack --config ./config/webpack.config.js\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/Kirusi/ez-string.git\"\r\n  },\r\n  \"keywords\": [\r\n    \"string\",\r\n    \"template\",\r\n    \"render\",\r\n    \"interpolation\",\r\n    \"variable\",\r\n    \"substitution\"\r\n  ],\r\n  \"author\": \"Kirusi Msafiri\",\r\n  \"license\": \"0BSD\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/Kirusi/ez-string/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/Kirusi/ez-string#readme\",\r\n  \"devDependencies\": {\r\n    \"coveralls\": \"^3.0.0\",\r\n    \"cross-env\": \"^5.2.0\",\r\n    \"esdoc\": \"^1.0.4\",\r\n    \"esdoc-node\": \"^1.0.2\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"eslint\": \"^4.18.2\",\r\n    \"eslint-watch\": \"^3.1.3\",\r\n    \"gulp\": \"^4.0.0\",\r\n    \"gulp-util\": \"^3.0.8\",\r\n    \"jison\": \"^0.4.18\",\r\n    \"mocha\": \"^4.1.0\",\r\n    \"mocha-lcov-reporter\": \"^1.3.0\",\r\n    \"nyc\": \"^11.4.1\",\r\n    \"selenium-webdriver\": \"^4.0.0-alpha.1\",\r\n    \"should\": \"^13.1.3\",\r\n    \"webpack\": \"^3.10.0\"\r\n  }\r\n}\r\n",
     "longname": "D:\\Personal\\Projects\\ez-string\\package.json",
     "name": "package.json",
     "static": true,

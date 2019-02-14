@@ -29,8 +29,7 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#private">private</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/private/raw-parser.js~RawParser.html">RawParser</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#public">public</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -117,7 +116,7 @@ book = render(&apos;One of the best books by {author} is &quot;{title}&quot;.&ap
 </code></pre>
 <h2 id="why-ez-string">Why ez-string</h2><p>The most important reason is that this library doesn&apos;t leak memory.</p>
 <p> Many of the existing template renderers perform a two-step process. They compile a string template into a JavaScript function and then execute it while passing context data. However, most users of such libraries rarely cache the resulting compiled function. Instead they may compile the same template again and again. Due to inticacies of NodeJS memory garbage collection. Such pattern usually results in a memory leak, as described by <a href="https://blog.meteor.com/an-interesting-kind-of-javascript-memory-leak-8b47d2e7f156">Meteor developers.</a></p>
-<p>Library documentation is <a href="https://kirusi.github.io/ez-string/docs/index.html">here.</a></p>
+<p>Library documentation is <a href="https://kirusi.github.io/ez-string/">here.</a></p>
 </div>
 </div>
 
