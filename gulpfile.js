@@ -1,19 +1,25 @@
 // grab our gulp packages
 const gulp = require('gulp');
-const gutil = require('gulp-util');
 const { execSync } = require('child_process');
+const PluginError = require('plugin-error');
+const del = require('del');
 
 function runCmd(taskName, cmd) {
     try {
         execSync(cmd, {stdio: [0, 1, 2]});
     }
     catch (error) {
-        throw new gutil.PluginError({
+        throw new PluginError({
             plugin: taskName,
             message: error.message
         });
     }
 }
+
+gulp.task('clean', function(done) {
+    del.sync(['./build', './generated', './docs']);
+    done();
+});
 
 gulp.task('eslint', function eslintTask(done) {
     runCmd('eslint', 'npm run eslint-fix');
@@ -56,7 +62,6 @@ gulp.task('web-test', gulp.series('prod-test', function prodTestTask(done) {
 }));
 
 gulp.task('build', gulp.series('web-test', function buildTask(done) {
-    gutil.log('Build is complete.');
     done();
 }));
 
@@ -66,6 +71,5 @@ gulp.task('watch', function watchTask(done) {
 });
 
 gulp.task('default', gulp.series('build', 'watch', function defaultTask(done) {
-    gutil.log('Default task is complete.');
     done();
 }));
