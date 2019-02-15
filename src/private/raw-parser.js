@@ -67,7 +67,10 @@ let grammar = {
 
     // === PARSER RULES ===
     'bnf': {
-        'contents': [[ 'content EOF', '{ return $1; }' ]],
+        'contents': [
+            [ 'content EOF', '{ return $1; }' ],
+            [ 'EOF', '{ return ""; }' ],
+        ],
         'content': [
             // template starts with text
             ['TEXT', '{ $$ = $1; }'],

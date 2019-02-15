@@ -241,12 +241,12 @@ module.exports = {
   }
 */
 var parser = (function(){
-var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[5,6,7],$V1=[1,9],$V2=[1,11],$V3=[9,13,15],$V4=[16,18];
+var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[5,6,7],$V1=[1,10],$V2=[1,12],$V3=[9,13,15],$V4=[16,18];
 var parser = {trace: function trace () { },
 yy: {},
 symbols_: {"error":2,"contents":3,"content":4,"EOF":5,"TEXT":6,"{":7,"value":8,"}":9,"NUMBER":10,"expr":11,"ID":12,"[":13,"]":14,".":15,"QUOTE":16,"identifier":17,"STRING":18,"$accept":0,"$end":1},
 terminals_: {2:"error",5:"EOF",6:"TEXT",7:"{",9:"}",10:"NUMBER",12:"ID",13:"[",14:"]",15:".",16:"QUOTE",18:"STRING"},
-productions_: [0,[3,2],[4,1],[4,3],[4,2],[4,4],[8,1],[8,1],[11,1],[11,4],[11,3],[11,6],[11,5],[17,1],[17,2]],
+productions_: [0,[3,2],[3,1],[4,1],[4,3],[4,2],[4,4],[8,1],[8,1],[11,1],[11,4],[11,3],[11,6],[11,5],[17,1],[17,2]],
 performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
 /* this == yyval */
 
@@ -255,43 +255,46 @@ switch (yystate) {
 case 1:
 { return $$[$0-1]; }
 break;
-case 2: case 13:
+case 2:
+{ return ""; }
+break;
+case 3: case 14:
 { this.$ = $$[$0]; }
 break;
-case 3:
+case 4:
 { this.$ = $$[$0-1]; }
 break;
-case 4: case 14:
+case 5: case 15:
 { this.$ = $$[$0-1] + $$[$0]; }
 break;
-case 5:
+case 6:
 { this.$ = $$[$0-3] + $$[$0-1]; }
 break;
-case 6:
+case 7:
 { let argPos = parseInt($$[$0], 10); this.$=yy.ctx[argPos]; }
 break;
-case 7:
+case 8:
 { this.$=yy.stack; yy.stack=undefined; }
 break;
-case 8:
+case 9:
 { yy.stack=yy.ctx[0][$$[$0]]; }
 break;
-case 9:
+case 10:
 { let argPos = parseInt($$[$0-1], 10); yy.stack=yy.stack[argPos]; }
 break;
-case 10:
+case 11:
 { yy.stack=yy.stack[$$[$0]]; }
 break;
-case 11:
+case 12:
 { yy.stack=yy.stack[$$[$0-2]]; }
 break;
-case 12:
+case 13:
 { yy.stack=yy.stack[""]; }
 break;
 }
 },
-table: [{3:1,4:2,6:[1,3],7:[1,4]},{1:[3]},{5:[1,5],6:[1,6],7:[1,7]},o($V0,[2,2]),{8:8,10:$V1,11:10,12:$V2},{1:[2,1]},o($V0,[2,4]),{8:12,10:$V1,11:10,12:$V2},{9:[1,13]},{9:[2,6]},{9:[2,7],13:[1,14],15:[1,15]},o($V3,[2,8]),{9:[1,16]},o($V0,[2,3]),{10:[1,17],16:[1,18]},{12:[1,19]},o($V0,[2,5]),{14:[1,20]},{16:[1,22],17:21,18:[1,23]},o($V3,[2,10]),o($V3,[2,9]),{16:[1,24],18:[1,25]},{14:[1,26]},o($V4,[2,13]),{14:[1,27]},o($V4,[2,14]),o($V3,[2,12]),o($V3,[2,11])],
-defaultActions: {5:[2,1],9:[2,6]},
+table: [{3:1,4:2,5:[1,3],6:[1,4],7:[1,5]},{1:[3]},{5:[1,6],6:[1,7],7:[1,8]},{1:[2,2]},o($V0,[2,3]),{8:9,10:$V1,11:11,12:$V2},{1:[2,1]},o($V0,[2,5]),{8:13,10:$V1,11:11,12:$V2},{9:[1,14]},{9:[2,7]},{9:[2,8],13:[1,15],15:[1,16]},o($V3,[2,9]),{9:[1,17]},o($V0,[2,4]),{10:[1,18],16:[1,19]},{12:[1,20]},o($V0,[2,6]),{14:[1,21]},{16:[1,23],17:22,18:[1,24]},o($V3,[2,11]),o($V3,[2,10]),{16:[1,25],18:[1,26]},{14:[1,27]},o($V4,[2,14]),{14:[1,28]},o($V4,[2,15]),o($V3,[2,13]),o($V3,[2,12])],
+defaultActions: {3:[2,2],6:[2,1],10:[2,7]},
 parseError: function parseError (str, hash) {
     if (hash.recoverable) {
         this.trace(str);

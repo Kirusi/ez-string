@@ -56,7 +56,12 @@ gulp.task('prod-test', gulp.series('webpack', function prodTestTask(done) {
     done();
 }));
 
-gulp.task('web-test', gulp.series('prod-test', function prodTestTask(done) {
+gulp.task('analyze-tests', gulp.series('prod-test', function devTestTask(done) {
+    runCmd('analyze-tests', 'npm run analyze-tests');
+    done();
+}));
+
+gulp.task('web-test', gulp.series('analyze-tests', function prodTestTask(done) {
     runCmd('web-test', 'npm run web-test');
     done();
 }));

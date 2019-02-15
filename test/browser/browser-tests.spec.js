@@ -32,7 +32,7 @@ for (let browser of BrowserList.allBrowsers) {
             await driver.get(`file:///${htmlPath}`);
 
             let numPasses = await driver.findElement(webdriver.By.css('li.passes em')).getText();
-            should.equal(98, numPasses);
+            should.equal(99, numPasses);
 
             let numFails = await driver.findElement(webdriver.By.css('li.failures em')).getText();
             should.equal(0, numFails);

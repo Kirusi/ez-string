@@ -25,6 +25,14 @@ if (process) {
 
 describe('Plain text tests', function() {
 
+    it('empty string', function(done) {
+        let tmpl = '';
+        let expected = '';
+        should.strictEqual(expected, render(tmpl));
+
+        done();
+    });
+
     it('single line', function(done) {
         let tmpl = 'abc';
         let expected = 'abc';
