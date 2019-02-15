@@ -1,7 +1,9 @@
 # ez-string
 [![Travis build status badge](https://api.travis-ci.org/Kirusi/ez-string.svg?branch=master)](https://travis-ci.org/Kirusi/ez-string)
+[![Code coverage status badge](https://coveralls.io/repos/github/Kirusi/ez-string/badge.svg)](https://coveralls.io/github/Kirusi/ez-string)
 [![ESDoc coverage badge](https://doc.esdoc.org/github.com/Kirusi/ez-string/badge.svg)](https://doc.esdoc.org/github.com/Kirusi/ez-string/)
 [![Number of tests](https://raw.githubusercontent.com/Kirusi/ez-string/master/tools/test-badge.svg?sanitize=true)](https://travis-ci.org/Kirusi/ez-string)
+[![Codacy code quality badge](https://api.codacy.com/project/badge/Grade/2dadfcbe3390420c974442da451f5b94)](https://www.codacy.com/app/Kirusi/ez-string?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Kirusi/ez-string&amp;utm_campaign=Badge_Grade)
 
 A string template renderer for JavaScript without memory leaks. It supports referencing variables by position, by name. One can access properties and array elements.
 

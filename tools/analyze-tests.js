@@ -5,7 +5,7 @@ const libxmljs = require('libxmljs');
 const { BadgeFactory } = require('gh-badges');
 
 let buildDir = path.join(__dirname, '..', 'build');
-let testResultsFile = path.join(buildDir, 'prod-tests.xml');
+let testResultsFile = path.join(buildDir, process.argv[2]);
 let xmlTxt = fs.readFileSync(testResultsFile, 'utf8');
 
 let xmlDoc = libxmljs.parseXml(xmlTxt);
