@@ -7,6 +7,8 @@
 
 A string template renderer for JavaScript without memory leaks. It supports referencing variables by position, by name. One can access properties and array elements.
 
+[API reference](https://kirusi.github.io/ez-string/)
+
 ## Example
 
 ```js
