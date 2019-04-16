@@ -1,6 +1,6 @@
 {
   "name": "ez-string",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "A string template renderer for JavaScript without memory leaks.",
   "files": [ "./ez-string.js" ],
   "main": "./ez-string.js",
