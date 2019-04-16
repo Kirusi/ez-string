@@ -2,7 +2,8 @@
   "name": "ez-string",
   "version": "1.1.9",
   "description": "A string template renderer for JavaScript without memory leaks.",
-  "main": "ez-string.js",
+  "files": [ "./ez-string.js" ],
+  "main": "./ez-string.js",
   "scripts": {
     "analyze-tests": "node ./tools/analyze-tests.js prod-tests.xml",
     "esdoc": "esdoc -c ./esdoc.json",
